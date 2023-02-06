@@ -21,11 +21,15 @@ class Player  {
     } 
 }
 
-const x = canvas.height / 2
-const y = canvas.width / 2
+const x = canvas.width / 2
+const y = canvas.height / 2
 
 const player = new Player(x,y,30,'blue');
 
-player.draw()
+//player.draw()
+player.draw();
+
 
 console.log(player);
+console.log(canvas);
+console.log("prueba 01");
