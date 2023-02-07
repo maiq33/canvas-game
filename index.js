@@ -22,11 +22,11 @@ class Player  {
 }
 
 class Projectile {
-    constructor(x, y, radius, color, velocity) {
+    constructor(x, y, radius, pro_color, velocity) {
         this.x = x
         this.y = y
         this.radius = radius
-        this.color = color
+        this.color = pro_color
         this.velocity = velocity
     }
 
@@ -42,13 +42,8 @@ class Projectile {
 const x = canvas.width / 2
 const y = canvas.height / 2
 
-const player = new Player(x,y,30,'blue');
-player.draw();
 
 
-console.log(player);
-console.log(canvas);
-console.log("prueba 07");
 
 addEventListener('click', (event) => { 
     const projectile = new Projectile(event.clientX,event.clientY,5,'green',null)
@@ -56,5 +51,12 @@ addEventListener('click', (event) => {
     console.log(player)
     console.log(projectile)
     })
+
+    const player = new Player(x,y,30,'blue');
+    player.draw();
+
+    console.log(player);
+    console.log(canvas);
+    console.log("prueba 10");
 
 
