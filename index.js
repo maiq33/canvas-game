@@ -1,4 +1,4 @@
-const canvas = document.querySelector("canvas");
+const canvas = document.querySelector('canvas');
 
 const c = canvas.getContext('2d')
 
@@ -14,7 +14,7 @@ class Player  {
     }
 
     draw () {
-        c.beginPath
+        c.beginPath()
         c.arc(this.x,this.y,this.radius,0,Math.PI * 2, false)
         c.fillStyle = this.color
         c.fill()
@@ -31,7 +31,7 @@ class Projectile {
     }
 
     draw () {
-        c.beginPath
+        c.beginPath()
         c.arc(this.x,this.y,this.radius,0,Math.PI * 2, false)
         c.fillStyle = this.color
         c.fill()
@@ -50,6 +50,7 @@ addEventListener('click', (event) => {
     projectile.draw()
     console.log(player)
     console.log(projectile)
+    console.log(c)
     })
 
     const player = new Player(x,y,30,'blue');
@@ -58,5 +59,6 @@ addEventListener('click', (event) => {
     console.log(player);
     console.log(canvas);
     console.log("prueba 10");
+    console.log(c)
 
 
